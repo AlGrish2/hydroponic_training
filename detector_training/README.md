@@ -1,9 +1,9 @@
-Preparing enviroment:
+### Preparing enviroment:
 - sh preparing_repo.sh
 ___
 Enviroment is ready. Preparing configs:
 
-Dataset structure:
+### Dataset structure:
 ```
 dataset/
     - images/
@@ -18,5 +18,6 @@ dataset/
         ...
         test_image_name_N.txt
 ```
+### Dataset should find in yolov5 root. yolov5/dataset/...
 
-After all run: sh start_train.sh
+#### After all run: sh start_train.sh
