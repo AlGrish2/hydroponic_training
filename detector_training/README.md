@@ -3,13 +3,20 @@ Preparing enviroment:
 ___
 Enviroment is ready. Preparing configs:
 
-Change dataset path and classes metadata in [plants_train.yaml](data/plants_train.yaml)
-Example:
-- path: dataset  # dataset root dir
-- train: images  # train images (relative to 'path') 
-- val: images  # val images (relative to 'path')
+Dataset structure:
+```
+dataset/
+    - images/
+        train_image_name_1.jpg
+        train_image_name_2.jpg
+        ...
+        train_image_name_N.jpg
 
-- nc: 1  # number of classes
-- names: ['plant']  # class names
+    - labels/
+        test_image_name_1.txt
+        test_image_name_2.txt
+        ...
+        test_image_name_N.txt
+```
 
 After all run: sh start_train.sh

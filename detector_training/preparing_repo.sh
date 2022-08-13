@@ -10,4 +10,4 @@ activate () {
 }
 activate
 
-cp data/coco.yaml data/plants_train.yaml
+mv ../plants_train.yaml data/ 
